@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  height: calc(100vh - 40px);
+  width: 60%;
+  margin: 20px auto;
+  border: 3px solid black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.square {
+  width: calc(100% / 6);
+  border: 3px solid green;
+  height: calc(100% / 6);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
