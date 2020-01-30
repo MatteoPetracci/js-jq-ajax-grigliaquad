@@ -5,13 +5,17 @@
 
 $(document).ready(function() {
   $('.square').click(function() {
+    var element = $(this)
     $.ajax ({
       'url' : 'https://flynn.boolean.careers/exercises/api/random/int',
       'method' : 'GET',
       'success' : function (data, stato) {
         var response = data.response;
         console.log(response);
-        numFive(response);
+        // numFive(response);
+        if (response <= 5) {
+          $(element).addClass('yellow');
+        }
       },
       'error' : function (richiesta, stato, errori) {
         alert("C'è stato un errore " + errori);
@@ -20,10 +24,10 @@ $(document).ready(function() {
   });
 });
 
-function numFive (number) {
-  if (number <= 5) {
-    console.log('minore o uguale di 5');
-  } else {
-    console.log('maggiore di 5');
-  }
-}
+// function numFive (number) {
+//   if (number <= 5) {
+//     console.log('minore o uguale di 5');
+//   } else {
+//     console.log('maggiore di 5');
+//   }
+// }
