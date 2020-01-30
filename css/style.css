@@ -23,6 +23,10 @@ body {
   width: calc(100% / 6);
   height: calc(100% / 6);
   border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
 }
 
 .yellow {
@@ -31,4 +35,8 @@ body {
 
 .green {
   background-color: lightgreen;
+}
+
+.square:hover {
+  cursor: pointer;
 }
