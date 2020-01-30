@@ -15,8 +15,10 @@ $(document).ready(function() {
         // numFive(response);
         if (response <= 5) {
           $(element).addClass('yellow');
+          $(element).append(response);
         } else {
           $(element).addClass('green');
+          $(element).append(response);
         }
       },
       'error' : function (richiesta, stato, errori) {
