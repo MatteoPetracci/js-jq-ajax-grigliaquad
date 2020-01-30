@@ -11,10 +11,19 @@ $(document).ready(function() {
       'success' : function (data, stato) {
         var response = data.response;
         console.log(response);
+        numFive(response);
       },
       'error' : function (richiesta, stato, errori) {
-        alert("C'è stato un errore" + errori);
+        alert("C'è stato un errore " + errori);
       }
     });
   });
 });
+
+function numFive (number) {
+  if (number <= 5) {
+    console.log('minore o uguale di 5');
+  } else {
+    console.log('maggiore di 5');
+  }
+}
