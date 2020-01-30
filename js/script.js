@@ -10,12 +10,12 @@ $(document).ready(function() {
   // Quadrati con js
 
   for (var i = 0; i < 36; i++) {
-    $('.container').append('<div class="square"></div>')
+    $('.container').append('<div class="square"></div>');
   }
 
   // ********************************************************
   $('.square').click(function() {
-    var element = $(this)
+    var element = $(this);
     $.ajax ({
       'url' : 'https://flynn.boolean.careers/exercises/api/random/int',
       'method' : 'GET',
