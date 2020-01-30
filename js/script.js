@@ -4,6 +4,16 @@
 // Il numero ottenuto appare al centro del quadrato.
 
 $(document).ready(function() {
+
+  // ********************************************************
+
+  // Quadrati con js
+
+  for (var i = 0; i < 36; i++) {
+    $('.container').append('<div class="square"></div>')
+  }
+
+  // ********************************************************
   $('.square').click(function() {
     var element = $(this)
     $.ajax ({
@@ -21,7 +31,7 @@ $(document).ready(function() {
           $(element).addClass('green');
           // $(element).append(response);
           $(element).html(response);
-          
+
         }
       },
       'error' : function (richiesta, stato, errori) {
@@ -32,9 +42,9 @@ $(document).ready(function() {
 });
 
 // function numFive (number) {
-//   if (number <= 5) {
-//     console.log('minore o uguale di 5');
-//   } else {
-//     console.log('maggiore di 5');
-//   }
-// }
+  //   if (number <= 5) {
+    //     console.log('minore o uguale di 5');
+    //   } else {
+      //     console.log('maggiore di 5');
+      //   }
+      // }
