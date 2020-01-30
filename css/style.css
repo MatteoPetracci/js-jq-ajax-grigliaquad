@@ -12,17 +12,17 @@ body {
 }
 
 .container {
+  display: flex;
   margin: auto;
   flex-wrap: wrap;
   height: 500px;
   width: 500px;
-  display: flex;
 }
 
 .square {
   width: calc(100% / 6);
-  border: 3px solid green;
   height: calc(100% / 6);
+  border: 3px solid green;
 }
 
 .yellow {
