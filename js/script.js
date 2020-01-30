@@ -15,6 +15,8 @@ $(document).ready(function() {
         // numFive(response);
         if (response <= 5) {
           $(element).addClass('yellow');
+        } else {
+          $(element).addClass('green');
         }
       },
       'error' : function (richiesta, stato, errori) {
